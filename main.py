@@ -6,7 +6,7 @@ with open(f"Shujuku-Xitong-Gailun/{fileName}", encoding="utf-8", mode="r") as fi
 
 startIndex = origin.index("ATABASE ❏") + len("ATABASE ")
 info = origin[startIndex:]
-output = info.replace("❏", "\n- ").replace(" n ", "\n  - ").replace("&%", "").replace("$%", "")
+output = info.replace("❏", "\n- ").replace(" n ", "\n    - ").replace("&%", "").replace("$%", "")
 
 with open(f"Shujuku-Xitong-Gailun/{fileName}", encoding="utf-8", mode="w") as file:
     file.write(origin[0:startIndex - len("ATABASE ")] + "\n" + output)
